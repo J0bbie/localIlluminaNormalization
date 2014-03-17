@@ -3,7 +3,7 @@ localIlluminaNormalization
 
 ###Pipeline to perform local illuminina normalization, QC and statistics.
 
-Scripts for locally running background correction, normalization, quality assessment and statistics of Illumina Beadchip data using the methods found in the limma and lumi packages. If possible, missing packages are installed.
+Scripts/pipeline for locally running background correction, normalization, variance stabilization, quality assessment and statistics of Illumina Beadchip data using the methods found in the limma and lumi packages. If possible, missing packages are installed.
 
 **Scripts based on [ArrayAnalysis](http://www.arrayanalysis.org/) developed by: Department of Bioinformatics - BiGCaT Bioinformatics and Systems Biology Research Group Maastricht University - The Netherlands**
 
