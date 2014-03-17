@@ -5,6 +5,8 @@ localIlluminaNormalization
 
 Scripts for locally running background correction, normalization, quality assessment and statistics of Illumina Beadchip data using the methods found in the limma and lumi packages. If possible, missing packages are installed.
 
+Scripts based on arrayAnalysis developed by: Department of Bioinformatics - BiGCaT Bioinformatics and Systems Biology Research Group Maastricht University - The Netherlands 
+
 The main files which are needed are:
 - Sample Probe Profile (`-s/--sampleProbeProfilePath`)
   - Contains the expression values of the samples on the array
