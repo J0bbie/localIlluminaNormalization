@@ -17,7 +17,7 @@ The main files which are needed are:
 
 The scripts can be run using:
 -Rscript:	Rscript runIlluminaNormalization -i <input> -o <output> etc. etc.
--RStudio:	Arguments can be given by adding this line in runIlluminaNormalization.R: userParameters <- getArguments(c("-o", "C:/Users/rietjv/AppData/Local/My Local Documents/output", "-i" ,"//tsn.tno.nl/Data/Users/rietjv/Home/Documents/Database/extra/Report","-s","Sample_Probe_Profile_102259-2.txt","-c", "Control_Probe_Profile_102259-2.txt","-d","headers.txt"))
+-RStudio:	Arguments can be given by adding this line in runIlluminaNormalization.R: userParameters <- getArguments(c("-o", "<outputDir>", "-i" ,"<inputDir>","-s","Sample_Probe_Profile_102259-2.txt","-c", "Control_Probe_Profile.txt","-d","descFile.txt"))
 
 All ~55 possible arguments can also be seen by running runIlluminaNormalization.R -h.
 
