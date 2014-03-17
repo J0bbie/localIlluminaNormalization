@@ -5,7 +5,7 @@ localIlluminaNormalization
 
 Scripts for locally running background correction, normalization, quality assessment and statistics of Illumina Beadchip data using the methods found in the limma and lumi packages. If possible, missing packages are installed.
 
-**Scripts based on arrayAnalysis developed by: Department of Bioinformatics - BiGCaT Bioinformatics and Systems Biology Research Group Maastricht University - The Netherlands**
+**Scripts based on [ArrayAnalysis](http://www.arrayanalysis.org/) developed by: Department of Bioinformatics - BiGCaT Bioinformatics and Systems Biology Research Group Maastricht University - The Netherlands**
 
 The main files which are needed are:
 - Sample Probe Profile (`-s/--sampleProbeProfilePath`)
@@ -24,7 +24,7 @@ The pipeline takes in command-line arguments from Rscript or RStudio. (Hardcoded
 
 The scripts can be run using:
 - Rscript:
-  - `Rscript runIlluminaNormalization -i \<inputDir\> -o \<outputDir\> -s \<sampleProfile.txt\> -c  \<controlProfile.txt\> -d  \<descriptionFile.txt\> etc. `
+  - `Rscript runIlluminaNormalization.R -i \<inputDir\> -o \<outputDir\> -s \<sampleProfile.txt\> -c  \<controlProfile.txt\> -d  \<descriptionFile.txt\> etc. `
 - RStudio:
   - Arguments can be given by adding this line in `runIlluminaNormalization.R` and supplying a vector of arguments: `userParameters <- getArguments(c("-o", "~/outputDir", "-i" ,"~/inputDir","-s","Sample_Probe_Profile.txt","-c", "Control_Probe_Profile.txt","-d","descFile.txt"))`
 
