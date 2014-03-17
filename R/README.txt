@@ -1,19 +1,19 @@
-Author(s):				Job van Riet (Original scripts provided by: Varshna Goelela + ArrayAnalysis.org)
-Date of  creation:		3-3-14
+Author(s):	Job van Riet (Original scripts provided by: Varshna Goelela + ArrayAnalysis.org)
+Date of  creation:	3-3-14
 Date of modification:	3-3-14 (Job van Riet)
-Version:				1.1
-Modifications:			(Job) Added parser, stand-alone functionality, logging, and cleaned up the code.
-Known bugs:				Covariance plotting of data-matrices does not work with low amount of samples/intensities. This function (cv.plot) is in a tryCatch as a solution.
-Package contains:		runIlluminaNormalization.R (Main script), getArguments.R, functions_qualityControl.R, functions_makeImages.R, functions_loadPackages.R
+Version:		1.1
+Modifications:	(Job) Added parser, stand-alone functionality, logging, and cleaned up the code.
+Known bugs:	Covariance plotting of data-matrices does not work with low amount of samples/intensities. This function (cv.plot) is in a tryCatch as a solution.
+Package contains:	runIlluminaNormalization.R (Main script), getArguments.R, functions_qualityControl.R, functions_makeImages.R, functions_loadPackages.R
 
 Description:
 Scripts for locally running background correction, normalization and quality assessment of Illumina Beadchip data using the methods found in the limma and lumi packages. If possible, missing packages are installed.
 The main files which are needed are:
 -Sample Probe Profile	(Which contains the expression values of the samples on the array)
 -Control Probe Profile	(Which contains the expression values of the control probes, used when background correcting)
--descriptionFile		(Tab-delimited file containing: arrayNames (Name of the array as defined in the Sample Probe profile) | sampleNames (User specified name for the sample) | sampleGroup (If samples should be clustered, provide identical identifiers here) )
--statSubsetFile	.txt		(Optional) This file contains the sampleNames that should be used in the subset where statistics are run on if -B TRUE. The sampleNames should correspond with the sampleNames in the descriptionFile.
--R Lumibatch object		(Optional) A LumiBatch object containing the normalized expression values if -f is true.	
+-descriptionFile	(Tab-delimited file containing: arrayNames (Name of the array as defined in the Sample Probe profile) | sampleNames (User specified name for the sample) | sampleGroup (If samples should be clustered, provide identical identifiers here) )
+-statSubsetFile.txt 	(Optional) This file contains the sampleNames that should be used in the subset where statistics are run on if -B TRUE. The sampleNames should correspond with the sampleNames in the descriptionFile.
+-R Lumibatch object	(Optional) A LumiBatch object containing the normalized expression values if -f is true.	
 
 The scripts can be run using:
 -Rscript:	Rscript runIlluminaNormalization -i <input> -o <output> etc. etc.
