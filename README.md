@@ -28,6 +28,10 @@ The scripts can be run using:
 - RStudio:
   - Arguments can be given by adding this line in `runIlluminaNormalization.R` and supplying a vector of arguments: `userParameters <- getArguments(c("-o", "~/outputDir", "-i" ,"~/inputDir","-s","Sample_Probe_Profile.txt","-c", "Control_Probe_Profile.txt","-d","descFile.txt"))`
 
+##Flowchart of pipeline
+
+![Flow Pipeline](Documentation/flowPipeline.png)
+
 ##Parameters
 All ~55 possible arguments can also be seen by running runIlluminaNormalization.R -h.
 
