@@ -1,0 +1,9 @@
+Package: illuminaNormalisation
+Type: Package
+Title: Scripts for running background correction, normalization and quality assessment of Illumina Beadchip data using the methods found in the limma and lumi packages on the openCPU platform provided by TNO. If possible, missing packages are installed.
+Version: 1.0
+Date: 2014-03-17
+Author: Job van Riet (Original scripts provided by: Varshna Goelela + ArrayAnalysis.org)
+Maintainer: Job van Riet <job.vanriet@tno.nl>
+Description: Scripts for running background correction, normalization and quality assessment of Illumina Beadchip data using the methods found in the limma and lumi packages on the openCPU platform provided by TNO. If possible, missing packages are installed. \nThe main files which are needed are: \n-Sample Probe Profile.txt (Which contains the expression values of the samples on the array) \n-Control Probe Profile.txt (Which contains the expression values of the control probes, used when background correcting) \n-descriptionFile.txt (Tab\n-delimited file containing: arrayNames (Name of the array as defined in the Sample Probe profile) \t sampleNames (User specified name for the sample) \t sampleGroup (If samples should be clustered, provide identical identifiers here) ) \n-statSubsetFile.txt (Optional) This file contains the sampleNames that should be used in the subset where statistics are run on if -B TRUE. The sampleNames should correspond with the sampleNames in the descriptionFile.  \n-R LumiBatch object (Optional) Containing the normalized expression values if -f is true to load in the normalized gene expressions.
+License: Apache 2.0
